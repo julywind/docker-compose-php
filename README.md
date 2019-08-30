@@ -1,5 +1,5 @@
 
-# 1、保证你的 80, 3306, 6379 是没被占用的
+# 1、保证你的 83 是没被占用的
 
 # 2、拷贝
   cp .env.example .env 并设置你自己的
@@ -8,13 +8,9 @@
 
 # mac 下，以下的 linfeng 你需要换成你自己的名字。
 DIR_WWW=/Users/linfeng/data/www/
-DIR_REDIS_DATA=/Users/linfeng/data/redis/
-DIR_MYSQL_DATA=/Users/linfeng/data/mysql/
 
 # centOS 下
 DIR_WWW=/data/www/
-DIR_REDIS_DATA=/data/redis/
-DIR_MYSQL_DATA=/data/mysql/
 
 # 3、运行
 docker-compose up -d
@@ -35,7 +31,6 @@ docker-compose up -d
 6. ./conf/nginx/nginx.conf - *Nginx configuration.*
 7. ./conf/nginx/conf.d - *Nginx site configuration directory.*
 8. ./conf/php/php.ini - *PHP configuration.*
-9. ./log/mysql - *MySQL log file.*
 10. ./log/nginx - *Nginx log file.*
 11. ./log/supervisor - *Supervisor log file.*
 12. ./files - *163 Mirrors URL.*
